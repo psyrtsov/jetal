@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>jetal</id>
+    <name>Talon Voice Support for JB Idea</name>
+    <vendor email="jetal.com" url="http://www.jetal.com">TheCompany</vendor>
+
+    <description><![CDATA[
+    Migrated code from the intellij-voicecode to the new JB API version
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <httpRequestHandler implementation="jetal.JeTalRequestHandler" />
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+
+</idea-plugin>
